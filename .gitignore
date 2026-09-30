@@ -1,0 +1,12 @@
+# Saídas geradas pelo ESP-IDF
+build/
+sdkconfig
+sdkconfig.old
+
+# Configurações locais de editores
+.vscode/
+.idea/
+
+# Componentes e arquivos baixados/gerados localmente
+managed_components/
+dependencies.lock

@@ -1,0 +1,19 @@
+menu "Atividade acadêmica FreeRTOS"
+
+choice APP_ATIVIDADE
+    prompt "Atividade a executar"
+    default APP_ATIVIDADE_1
+    help
+        Selecione qual atividade será iniciada por app_main().
+
+    config APP_ATIVIDADE_1
+        bool "Atividade 1 - monitoramento das tarefas"
+
+    config APP_ATIVIDADE_2
+        bool "Atividade 2 - medição da troca de contexto"
+
+    config APP_ATIVIDADE_3
+        bool "Atividade 3 - semáforos e buffer compartilhado"
+endchoice
+
+endmenu

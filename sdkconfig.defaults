@@ -1,0 +1,5 @@
+# Necessário para que uxTaskGetSystemState() preencha TaskStatus_t.
+CONFIG_FREERTOS_USE_TRACE_FACILITY=y
+
+# Não é necessário habilitar CONFIG_FREERTOS_USE_STATS_FORMATTING_FUNCTIONS:
+# o projeto não usa vTaskList() nem vTaskGetRunTimeStats().
