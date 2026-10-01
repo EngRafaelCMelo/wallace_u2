@@ -119,13 +119,13 @@ static void imprimir_resultados(void)
     printf("\nOverhead médio esp_timer_get_time(): %.3f us\n", s_overhead_timer_us);
     printf("\nTroca de contexto:\n");
     printf("Medições efetivamente registradas: %u\n", (unsigned) s_numero_amostras);
-    printf("Tempo total medido (soma bruta): " PRIu64 " us\n", s_soma_us);
+    printf("Tempo total medido (soma bruta): %" PRIu64 " us\n", s_soma_us);
     printf("Média bruta: %.3f us\n", media_bruta);
     printf("Média corrigida: %.3f us\n", media_corrigida);
-    printf("Mínimo: " PRId64 " us\n", s_minimo_us);
-    printf("Máximo: " PRId64 " us\n", s_maximo_us);
+    printf("Mínimo: %" PRId64 " us\n", s_minimo_us);
+    printf("Máximo: %" PRId64 " us\n", s_maximo_us);
     printf("Desvio padrão bruto: %.3f us\n", desvio_padrao);
-    printf("Tempo total do experimento: " PRId64 " us\n", tempo_total_experimento);
+    printf("Tempo total do experimento: %" PRId64 " us\n", tempo_total_experimento);
     printf("\nPercentual equivalente de um tick: %.3f %%\n", percentual_tick);
     printf("Percentual observado no experimento: %.3f %%\n", percentual_experimento);
     printf("=======================================\n");
